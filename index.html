@@ -2998,3 +2998,10 @@
     <script type="text/javascript" src="js/analytics.js"></script>
 </body>
 </html>
+<script>
+    $('.link_menu, .page_content').click(function () {
+       if ($('#menu_closed').is(':visible')) {
+            $('#menu_closed').click();
+        }
+    });
+</script>
