@@ -1,0 +1,105 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Candara, Arial,"helvetica neue",Helvetica,Verdana,sans-serif;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+/***** Bugfix for Android default browser [Begin] *****/
+/*body { -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix { from {padding: 0;} to { padding: 0;} }*/
+/***** Bugfix for Android default browser [end] *****/
+
+/***** COMMON [Begin] *****/
+.left { float:left; }
+.right { float:right; }
+.center {text-align:center;}
+.circle { border-radius:50%; }
+.clearfix { clear:both; }
+
+/*** center vertically and horizontally ***/
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Vertically centered */
+.vcenter {
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+.justify {
+    text-align: justify;
+}
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hidden{
+    display:none;
+}
+/***** COMMON [End] *****/
+
+/***** NAVMENU [begin] *****/
+nav {
+     padding:15px;
+    /*background: #FFFFFA;*//*rgba(43,43,43,1);*/  /*#024959;*/
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display:inline;
+}
+nav ul li a {
+    text-decoration: none;
+    /*color: rgba(255,255,255,0.6);*/
+    padding: 8px;
+}
+nav ul li a:link, nav ul li a:visited {
+     
+}
+nav ul li a:hover, nav ul li a.active {
+    /*color:rgba(255,255,255,1);*/
+}
+/*#navicon, #search, #location {
+    display:none;
+}*/
+#navicon {
+    display:none;
+}
+/***** NAVMENU [end] *****/
+
+.fnt, .fnt-sm, .fnt-lg {
+    color: white;
+    font-size: 40px;
+}
+.fnt-sm {
+    font-size: 20px;
+}
+.fnt-med {
+    font-size: 30px;
+}
+.fnt-lg {
+    font-size: 64px;
+}
+.content {
+    padding: 10px;
+}
