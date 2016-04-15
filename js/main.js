@@ -313,7 +313,7 @@ jQuery(document).ready(function($) {
     function initializes() {
         var contentString = '<div id="gmaps">' +
                 '<img src="images/profile_img.jpg" alt="" /><br />' +
-                '<p style="font-family: Arial, Helvetica, sans-serif;">Muteena Building, Salahuddin Road, Deira, Dubai, United Arab Emirates<br /><br />Phone: +971 50 960 8995</p>' +
+                '<p style="font-family: Arial, Helvetica, sans-serif;">Muteena Building, Salahuddin Road, Deira, Dubai, United Arab Emirates<br /><br />Phone: <a href="tel:+971509608995">+971 50 960-8995</a></p>' +
                 '</div>';
 
         var infowindow = new google.maps.InfoWindow({
